@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Star Cosmetics</title>
+	<style>
+		*{
+			box-sizing: border-box;
+			max-width: 1350px;
+		}
+		#navbar{
+			
+			padding: 10px;
+		}
+		#topimage{
+			width: 1335px;
+			
+		}
+		#kujaribu{
+			position: relative;
+		}
+		#kujaribu > h1 {
+			position: absolute;
+			color: black;
+			top: 220px;
+			font-size: 40px;
+			font-weight: bolder;
+			left: 20px;
+		}
+		#kujaribu > p {
+			position: absolute;
+			color: rgb(134, 130, 130);
+			font-style: italic;
+			top: 300px;
+			font-size: 20px;
+			left: 70px;
+			font-weight: 900;
+		}
+		@keyframes myArrow {
+			from {
+				top: 450px;
+			}
+			to {
+				top: 525px;
+			}
+		}
+		#arrow {
+			position: absolute;
+			width: 80px;
+			top: 450px;
+			left: 270px;
+		}
+		#arrow {
+			animation-name: myArrow;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+		}
+		#plink{
+			position: absolute;
+			cursor: pointer;
+			border-radius: 25px !important;
+			top: 620px !important;
+			left: 150px !important;
+			color: red !important;
+			font-size: 30px !important;
+		}
+		#plink:hover{
+			border: 3px solid grey;
+			padding: 10px;
+			font-size: 40px;
+		}
+		li {
+			list-style-type: none;
+			margin: 10px;
+		}
+		a {
+			text-decoration: none;
+			color: black;
+			font-weight: 900;
+			border-radius: 25px;
+			padding: 10px;
+			font-size: 20px;
+			font-style: italic;
+			
+			
+		}
+		a:hover {
+			color: plum;
+		}
+		a:visited {
+			text-decoration: none;
+			color: sienna;
+		}
+		#shortsummary{
+			background-color: rgb(204, 204, 204);
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+			padding: 10px;
+			line-height: 1.5cm;
+		}
+		#shortsummary > h2 {
+			text-align:center;
+			font-style: italic;
+			font-weight: bolder;
+			font-size: 30px;
+		}
+		#shortsummary > p {
+			font-size: 20px;
+		
+		}
+		#reviews {
+			background-color: rgb(165, 163, 163);
+			padding: 10px;
+			
+		}
+		#reviews2{
+			display: flex;
+		}
+		#reviews > h2 {
+			font-size: 30px;
+			font-style: italic;
+			font-weight: bolder;
+			text-align: center;
+		}
+		#client1{
+			border: 3px solid navy;
+			padding: 10px;
+			margin-bottom: 10px;
+			margin-right: 50px;
+			margin-left: 10px;
+			border-radius: 28px;
+			width: 300px;
+		}
+		.spano {
+			font-style: italic;
+			font-weight: bolder;
+		}
+		#client2{
+			border: 3px solid navy;
+			padding: 10px;
+			margin-bottom: 10px;
+			margin-right: 10px;
+			margin-left: 80px;
+			border-radius: 28px;
+			width: 300px;
+		}
+		#client3{
+			border: 3px solid navy;
+			padding: 10px;
+			margin-bottom: 10px;
+			
+			margin-left: 100px;
+			border-radius: 28px;
+			width: 300px;
+		}
+		.profilepic{
+			width: 80px;
+			border-radius: 50%;
+			margin-left: 90px;
+		}
+		footer{
+			background-color: grey;
+			padding: 10px;
+		}
+		footer > h2 {
+			font-size: 30px;
+			font-weight: bolder;
+			font-style: italic;
+		}
+		#lists{
+			display: flex;
+			float: right;
+			
+		}
+		#contactflex{
+			display: flex;
+			
+			
+		}
+		#flexo1{
+			margin-right: 100px;
+			
+		}
+		#flexo2{
+			margin-bottom: 20px;
+		}
+		#menuicon{
+			width: 45px;
+			cursor: pointer !important;
+			
+		}
+
+	</style> 
+
+</head> 
+<body>
+	<div id="navbar">
+		<navbar>
+			<img id="menuicon" src="images/menuicon.png">
+			<ul id="lists">
+				<li><a href="#kujaribu">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#shortsummary">About Us</a></li>
+				<li><a href="#contactus">Contact Us</a></li>
+			</ul>
+		</navbar>
+	</div>
+	<div id="kujaribu">
+		<img id="topimage" src="images/t.jpg" alt="">
+		<h1>Star Cosmetics & Beauty Shop</h1>
+		<p>Beauty Accessories! We stock just the right ones! </p>
+		<img id="arrow" src="images/a.png" alt="">
+		<p id="plink">SHOP NOW FOR 20% OFF!!</p>
+	</div>
+	<div id="shortsummary">
+		<h2>Our Goal</h2>
+		<p>Your beauty, your pride. We are grateful to see you chime in. Looking for a specific beauty product, weave, wig, 
+			manicure pedicure tools, facial scrubs, anti-dandruff, eyelashes ,artificial nails, studs, gold coated caflon studs, 
+			Ear Pearcing, waist bands, skincare products, facial cleansers, hairfoods, body lotions, petroleum jelly, 
+			body creams/cremes, hair bands, extentions, hair dyes, rings, wedding rings, unisex rings, porny tails, hair shampoo, 
+			Earings, nose rings, lipsticks, plus many more...
+		</p>	
+	</div>
+	<div id="reviews">
+		<h2>What our clients have to say</h2>
+		<div id="reviews2">
+			<div id="client1">
+				<img class="profilepic" src="images/pro4.png" alt="">
+				<p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consequuntur consectetur soluta similique voluptate 
+					impedit saepe maxime labore eligendi praesentium. Temporibus corrupti, recusandae ullam expedita necessitatibus totam 
+					illum eligendi provident." <p class="spano">June , CTO Fintech Solutions.</p>
+				</p>
+			</div>
+			<div id="client2">
+				<img class="profilepic" src="images/pro3.png" alt="">
+				<p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consequuntur consectetur soluta similique voluptate 
+					impedit saepe maxime labore eligendi praesentium. Temporibus corrupti, recusandae ullam expedita necessitatibus totam 
+					illum eligendi provident." <p class="spano">June , CTO Fintech Solutions.</p>
+				</p>
+			</div>
+			<div id="client3">
+				<img class="profilepic" src="images/pro2.png" alt="">
+				<p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consequuntur consectetur soluta similique voluptate 
+					impedit saepe maxime labore eligendi praesentium. Temporibus corrupti, recusandae ullam expedita necessitatibus totam 
+					illum eligendi provident." <p class="spano">June , CTO Fintech Solutions.</p>
+				</p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<h2 id="contactus">Contact Us</h2>
+		<div id="contactflex">
+			<div id="flexo1">
+				<p>We are located at Bishan Plaza 1st Floor Westlands.</p>
+				<p>Telephone: 555-555-555</p>
+				<p>Email: info@starcosmetics.com</p>
+			</div>
+			<div id="flexo2">
+				<p style="font-weight:bolder ; font-size: 20px; color:rgb(221, 175, 221);">Sign up to receive our newletters and notices when we have discounts and prizes to be won!!</p>
+				<form action="https://formspree.io/f/xeqnavwo" method="POST">
+					<label for="username">Username</label><br>
+					<input type="text" id="username" name="username" required><br>
+					<label for="emailAddress">Email Address</label><br>
+					<input id="emailAddress" name="emailAddress" type="email" required><br>
+					<label for="userComment">Comment</label><br>
+					<textarea id="userComment" name="userComment" ></textarea><br>
+					<button type="submit">Subscribe</button><br>
+				</form>
+			</div>
+		</div>
+		<p style="text-align: center;">&copy;starcosmetics ltd . 2007-2022.</p>
+	</footer>
+
+
+
+
+
+
+	
+</body>
+</html>
